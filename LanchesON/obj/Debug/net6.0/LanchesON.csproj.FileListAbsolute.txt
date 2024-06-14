@@ -28,3 +28,4 @@ C:\Meu conteúdo\CODE\Projetos\MVC\LanchesON\LanchesON\obj\Debug\net6.0\refint\L
 C:\Meu conteúdo\CODE\Projetos\MVC\LanchesON\LanchesON\obj\Debug\net6.0\LanchesON.pdb
 C:\Meu conteúdo\CODE\Projetos\MVC\LanchesON\LanchesON\obj\Debug\net6.0\LanchesON.genruntimeconfig.cache
 C:\Meu conteúdo\CODE\Projetos\MVC\LanchesON\LanchesON\obj\Debug\net6.0\ref\LanchesON.dll
+C:\Meu conteúdo\CODE\Projetos\MVC\LanchesON\LanchesON\obj\Debug\net6.0\LanchesON.csproj.AssemblyReference.cache
