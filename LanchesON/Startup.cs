@@ -1,4 +1,7 @@
-﻿namespace LanchesMac;
+﻿using LanchesMac.Context;
+using Microsoft.EntityFrameworkCore;
+
+namespace LanchesMac;
 public class Startup
 {
     public Startup(IConfiguration configuration)
@@ -9,8 +12,17 @@ public class Startup
     public IConfiguration Configuration { get; }
 
     // This method gets called by the runtime. Use this method to add services to the container.
+    // Responsável por configurar os serviços que a aplicação vai usar através de injeção de dependência
     public void ConfigureServices(IServiceCollection services)
     {
+        // Adiciona o contexto do banco de dados AppDbContext como um serviço e configura para usar o SQL Server como o provedor de banco de dados.
+        // O 'options' aqui é um objeto DbContextOptionsBuilder que permite configurar o contexto.
+        services.AddDbContext<AppDbContext>(options =>
+            // Configura o contexto para usar o SQL Server.
+            // Obtém a string de conexão do banco de dados a partir da configuração da aplicação,
+            // usando a chave "DefaultConnection" do arquivo appsettings.json
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
         services.AddControllersWithViews();
     }
 
