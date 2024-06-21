@@ -1,4 +1,6 @@
 ﻿using LanchesMac.Context;
+using LanchesON.Repositories.Interfaces;
+using LanchesON.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace LanchesMac;
@@ -11,7 +13,6 @@ public class Startup
 
     public IConfiguration Configuration { get; }
 
-    // This method gets called by the runtime. Use this method to add services to the container.
     // Responsável por configurar os serviços que a aplicação vai usar através de injeção de dependência
     public void ConfigureServices(IServiceCollection services)
     {
@@ -22,7 +23,11 @@ public class Startup
             // Obtém a string de conexão do banco de dados a partir da configuração da aplicação,
             // usando a chave "DefaultConnection" do arquivo appsettings.json
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
+        /* O que faz: Diz ao contêiner de DI para criar novas instâncias de LancheRepository e CategoriaRepository sempre que ILancheRepository
+        e ICategoriaRepository forem solicitados */
+        services.AddTransient<ILancheRepository, LancheRepository>();
+        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+        // O que faz: Adiciona suporte para controladores e visualizações MVC
         services.AddControllersWithViews();
     }
 
