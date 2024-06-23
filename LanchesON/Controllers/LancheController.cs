@@ -1,4 +1,5 @@
 ﻿using LanchesON.Repositories.Interfaces;
+using LanchesON.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LanchesON.Controllers
@@ -7,21 +8,21 @@ namespace LanchesON.Controllers
     {
         /* Usado para acessar o banco de dados, para isso irei injetar uma instancia do repository, eu posso fazer isso pois eu
         ja referenciei no meu arquivo "startup" o meu repositório como "Servico", entao eu posso usa-lo como DI */
-        private readonly ILancheRepository _repository;
+        private readonly ILancheRepository _lancheRepository;
 
-        public LancheController(ILancheRepository repository)
+        public LancheController(ILancheRepository lancheRepository)
         {
-            _repository = repository;
+            _lancheRepository = lancheRepository;
         }
 
-        // Aqui eu quero listar os meus lanches, entao terei que acessar o banco de dados
+        /* O método retorna uma view, passando o ViewModel lanchesListViewModel para ela. Isso significa que a view
+        associada a esta ação será renderizada e receberá o LancheListViewModel como seu modelo */
         public IActionResult List() 
         {
-            // Acessar lista de lanches
-            var lanches = _repository.Lanches;
-            // Retornar lista de lanches
-            // Como nao foi informado o nome da View, será procurada uma view com o nome "List.cshtm" (nome do método)
-            return View(lanches);
+            var lanchesListViewModel = new LancheListViewModel();
+            lanchesListViewModel.Lanches = _lancheRepository.Lanches;
+            lanchesListViewModel.CategoriaAtual = "Categoria atual";
+            return View(lanchesListViewModel);
         }
     }
 }
