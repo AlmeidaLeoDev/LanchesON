@@ -27,8 +27,14 @@ public class Startup
         e ICategoriaRepository forem solicitados */
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+        //Tempo de vida: todo o tempo de vida da aplicacao
+        services.AddSingleton<HttpContextAccessor, HttpContextAccessor>();
         // O que faz: Adiciona suporte para controladores e visualizações MVC
         services.AddControllersWithViews();
+
+        // Registrando os Middlewares
+        services.AddMemoryCache();
+        services.AddSession();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +54,8 @@ public class Startup
         app.UseStaticFiles();
 
         app.UseRouting();
+        // Ativar sessao
+        app.UseSession();
 
         app.UseAuthorization();
 
