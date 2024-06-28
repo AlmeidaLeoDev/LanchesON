@@ -35,6 +35,8 @@ namespace LanchesMac.Context
         public DbSet<Categoria> Categorias { get; set; }
         // Define uma propriedade DbSet para a entidade Lanche
         public DbSet<Lanche> Lanches { get; set; }
+        // Define uma propriedade DbSet para a entidade CarrinhoCompraItens
+        public DbSet<CarrinhoCompraItem> CarrinhoCompraItens { get; set; }
 
     }
 }
