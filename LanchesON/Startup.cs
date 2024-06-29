@@ -2,6 +2,7 @@
 using LanchesON.Repositories.Interfaces;
 using LanchesON.Repositories;
 using Microsoft.EntityFrameworkCore;
+using LanchesMac.Models;
 
 namespace LanchesMac;
 public class Startup
@@ -23,12 +24,19 @@ public class Startup
             // Obtém a string de conexão do banco de dados a partir da configuração da aplicação,
             // usando a chave "DefaultConnection" do arquivo appsettings.json
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
         /* O que faz: Diz ao contêiner de DI para criar novas instâncias de LancheRepository e CategoriaRepository sempre que ILancheRepository
         e ICategoriaRepository forem solicitados */
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         //Tempo de vida: todo o tempo de vida da aplicacao
         services.AddSingleton<HttpContextAccessor, HttpContextAccessor>();
+        // Instruçao lambda para definir a classe CarrinhoComrpra e "GetCarrinho" (Método do Model "CarrinhoCompra") para já obter um "Carrinho"
+        // "AddScoped" criará instancia CarrinhoCompra a cada request (se dois clientes solicitarem objeto carrinho ao mesmo tempo, terao instancias diferentes)
+        /* Quando um componente da aplicação solicitar uma instância de CarrinhoCompra, o método GetCarrinho será chamado, possivelmente
+        configurando ou retornando um carrinho de compras específico para a requisição atual */
+        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
+
         // O que faz: Adiciona suporte para controladores e visualizações MVC
         services.AddControllersWithViews();
 
