@@ -1,8 +1,8 @@
-﻿using LanchesMac.Models;
+﻿using LanchesON.Models;
 using Microsoft.EntityFrameworkCore;
 
 // Declara um namespace chamado LanchesMac.Context, que agrupa logicamente as classes relacionadas ao contexto do banco de dados
-namespace LanchesMac.Context
+namespace LanchesON.Context
 {
     // Define a classe AppDbContext, que herda de DbContext
     // Esta classe representa a sessão com o banco de dados e é usada para configurar e acessar dados

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 
-namespace LanchesMac;
+namespace LanchesON; 
 public class Program
 {
     public static void Main(string[] args)

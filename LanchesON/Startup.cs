@@ -1,10 +1,10 @@
-﻿using LanchesMac.Context;
+﻿using LanchesON.Context;
 using LanchesON.Repositories.Interfaces;
 using LanchesON.Repositories;
 using Microsoft.EntityFrameworkCore;
-using LanchesMac.Models;
+using LanchesON.Models;
 
-namespace LanchesMac;
+namespace LanchesON;
 public class Startup
 {
     public Startup(IConfiguration configuration)

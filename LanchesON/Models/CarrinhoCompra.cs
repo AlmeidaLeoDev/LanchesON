@@ -1,7 +1,7 @@
-﻿using LanchesMac.Context; // Importa o namespace que contém o contexto do banco de dados
+﻿using LanchesON.Context; // Importa o namespace que contém o contexto do banco de dados
 using Microsoft.EntityFrameworkCore; // Importa o namespace para funcionalidades do Entity Framework Core
 
-namespace LanchesMac.Models // Define um namespace para organizar as classes do projeto
+namespace LanchesON.Models // Define um namespace para organizar as classes do projeto
 {
     public class CarrinhoCompra // Define a classe CarrinhoCompra
     {

@@ -1,4 +1,4 @@
-﻿using LanchesMac.Models;
+﻿using LanchesON.Models;
 
 namespace LanchesON.ViewModels
 {

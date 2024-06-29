@@ -1,6 +1,6 @@
-﻿using LanchesMac.Models;
+﻿using LanchesON.Models;
 
-namespace LanchesMac.ViewModels
+namespace LanchesON.ViewModels  
 {
     public class CarrinhoCompraViewModel
     {

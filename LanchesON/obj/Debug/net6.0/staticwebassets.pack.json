@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\LanchesON.bundle.scp.css"
     },
     {
+      "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\Full-Cart-icon.png",
+      "PackagePath": "staticwebassets\\Images\\Full-Cart-icon.png"
+    },
+    {
       "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\carousel11.jpg",
       "PackagePath": "staticwebassets\\Images\\carousel11.jpg"
     },
@@ -15,6 +19,14 @@
     {
       "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\carousel13.jpg",
       "PackagePath": "staticwebassets\\Images\\carousel13.jpg"
+    },
+    {
+      "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\delete.png",
+      "PackagePath": "staticwebassets\\Images\\delete.png"
+    },
+    {
+      "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\remove.ico",
+      "PackagePath": "staticwebassets\\Images\\remove.ico"
     },
     {
       "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\css\\site.css",

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LanchesMac.Models
+namespace LanchesON.Models
 {
     [Table("Categorias")]
     public class Categoria

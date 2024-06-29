@@ -1,4 +1,4 @@
-﻿using LanchesMac.ViewModels;
+﻿using LanchesON.ViewModels;
 using LanchesON.Models;
 using LanchesON.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;

@@ -1,5 +1,5 @@
-﻿using LanchesMac.Context;
-using LanchesMac.Models;
+﻿using LanchesON.Context;
+using LanchesON.Models;
 using LanchesON.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
