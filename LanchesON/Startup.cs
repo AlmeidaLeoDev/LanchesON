@@ -29,8 +29,11 @@ public class Startup
         e ICategoriaRepository forem solicitados */
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
-        //Tempo de vida: todo o tempo de vida da aplicacao
-        services.AddSingleton<HttpContextAccessor, HttpContextAccessor>();
+        // Registrar IHttpContextAccessor
+        /* Registra o serviço IHttpContextAccessor no contêiner de injeção de dependência do ASP.NET Core. Isso permite que você acesse o
+         * HttpContext atual em qualquer lugar do seu aplicativo, incluindo classes que não são controllers ou middleware, como serviços e
+         * repositórios. Em resumo, ela facilita o acesso ao contexto da requisição HTTP atual em qualquer parte do aplicativo. */
+        services.AddHttpContextAccessor();
         // Instruçao lambda para definir a classe CarrinhoComrpra e "GetCarrinho" (Método do Model "CarrinhoCompra") para já obter um "Carrinho"
         // "AddScoped" criará instancia CarrinhoCompra a cada request (se dois clientes solicitarem objeto carrinho ao mesmo tempo, terao instancias diferentes)
         /* Quando um componente da aplicação solicitar uma instância de CarrinhoCompra, o método GetCarrinho será chamado, possivelmente

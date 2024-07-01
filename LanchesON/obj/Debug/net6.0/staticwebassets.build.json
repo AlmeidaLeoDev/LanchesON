@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bgAfxJh1Uyc8yUIoQe3chISllwpHTSRNgpCmJ+ZJRIM=",
+  "Hash": "/WetYgX4MXaL15elZUFLvlXEmAjjbrSaBX5rY9RcECU=",
   "Source": "LanchesON",
   "BasePath": "_content/LanchesON",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\carousel13.jpg"
+    },
+    {
+      "Identity": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\cart-5-16.ico",
+      "SourceId": "LanchesON",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\",
+      "BasePath": "_content/LanchesON",
+      "RelativePath": "Images/cart-5-16.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\cart-5-16.ico"
     },
     {
       "Identity": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\delete.png",
