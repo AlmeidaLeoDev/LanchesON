@@ -2,7 +2,7 @@
 using LanchesON.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LanchesMac.Components
+namespace LanchesON.Components 
 {
     public class CarrinhoCompraResumo : ViewComponent
     {

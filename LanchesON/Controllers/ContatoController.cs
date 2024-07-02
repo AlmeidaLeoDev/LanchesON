@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace LanchesMac.Controllers
+namespace LanchesON.Controllers
 {
     public class ContatoController : Controller
     {
         public IActionResult Index()
         {
-            return View();
+            return View(); 
         }
     }
 }

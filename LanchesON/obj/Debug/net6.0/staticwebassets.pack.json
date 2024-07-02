@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\LanchesON.bundle.scp.css"
     },
     {
+      "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\Envelope-icon24.png",
+      "PackagePath": "staticwebassets\\Images\\Envelope-icon24.png"
+    },
+    {
       "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\Full-Cart-icon.png",
       "PackagePath": "staticwebassets\\Images\\Full-Cart-icon.png"
+    },
+    {
+      "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\Home-iconred.png",
+      "PackagePath": "staticwebassets\\Images\\Home-iconred.png"
     },
     {
       "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\carousel11.jpg",
@@ -27,6 +35,14 @@
     {
       "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\delete.png",
       "PackagePath": "staticwebassets\\Images\\delete.png"
+    },
+    {
+      "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\faleconosco1.jpg",
+      "PackagePath": "staticwebassets\\Images\\faleconosco1.jpg"
+    },
+    {
+      "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\phone-app-icon.png",
+      "PackagePath": "staticwebassets\\Images\\phone-app-icon.png"
     },
     {
       "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\remove.ico",
