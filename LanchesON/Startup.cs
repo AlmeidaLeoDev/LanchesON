@@ -3,6 +3,8 @@ using LanchesON.Repositories.Interfaces;
 using LanchesON.Repositories;
 using Microsoft.EntityFrameworkCore;
 using LanchesON.Models;
+using LanchesMac.Repositories.Interfaces;
+using LanchesMac.Repositories;
 
 namespace LanchesON;
 public class Startup
@@ -29,6 +31,8 @@ public class Startup
         e ICategoriaRepository forem solicitados */
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+        services.AddTransient<IPedidoRepository, PedidoRepository>();
+
         // Registrar IHttpContextAccessor
         /* Registra o serviço IHttpContextAccessor no contêiner de injeção de dependência do ASP.NET Core. Isso permite que você acesse o
          * HttpContext atual em qualquer lugar do seu aplicativo, incluindo classes que não são controllers ou middleware, como serviços e
