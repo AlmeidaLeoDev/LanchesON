@@ -38,5 +38,8 @@ namespace LanchesON.Context
         // Define uma propriedade DbSet para a entidade CarrinhoCompraItens
         public DbSet<CarrinhoCompraItem> CarrinhoCompraItens { get; set; }
 
+        public DbSet<Pedido> Pedidos { get; set; }
+        public DbSet<PedidoDetalhe> PedidoDetalhes { get; set; }
+
     }
 }
