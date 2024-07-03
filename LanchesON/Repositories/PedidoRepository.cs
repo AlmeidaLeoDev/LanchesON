@@ -1,6 +1,4 @@
-﻿using LanchesMac.Context;
-using LanchesMac.Models;
-using LanchesMac.Repositories.Interfaces;
+﻿using LanchesON.Repositories.Interfaces;
 using LanchesON.Context;
 using LanchesON.Models;
 

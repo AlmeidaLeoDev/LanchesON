@@ -26,6 +26,12 @@
                     @* <a class="nav-link text-light" asp-area="" asp-controller="Lanche" asp-action="List">Lanches</a> *@
                     <a class="nav-link text-light" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a>
 
+                    @*
+                    O formulário é submetido usando o método GET. Isso adiciona os dados do formulário à URL como parâmetros de consulta (query string)
+
+                    O campo de entrada <input> tem o atributo name definido como searchString. Isso significa que quando o formulário 
+                    é submetido, o valor inserido neste campo é enviado com a chave searchString
+                    *@
                     <form class="navbar-form navbar-right" asp-controller="Lanche" asp-action="Search" method="get">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Procurar produto" name="searchString" value="@ViewData["searchString"]">

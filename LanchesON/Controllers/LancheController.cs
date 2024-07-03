@@ -65,6 +65,7 @@ namespace LanchesON.Controllers
             return View(lanche);
         }
 
+        // No método de ação Search, o parâmetro searchString corresponde ao valor da query string searchString
         public ViewResult Search(string searchString)
         {
             IEnumerable<Lanche> lanches;

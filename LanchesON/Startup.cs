@@ -3,7 +3,6 @@ using LanchesON.Repositories.Interfaces;
 using LanchesON.Repositories;
 using Microsoft.EntityFrameworkCore;
 using LanchesON.Models;
-using LanchesMac.Repositories.Interfaces;
 using LanchesMac.Repositories;
 
 namespace LanchesON;
