@@ -4,6 +4,7 @@ using LanchesON.Repositories;
 using Microsoft.EntityFrameworkCore;
 using LanchesON.Models;
 using LanchesMac.Repositories;
+using Microsoft.AspNetCore.Identity;
 
 namespace LanchesON;
 public class Startup
@@ -25,6 +26,10 @@ public class Startup
             // Obtém a string de conexão do banco de dados a partir da configuração da aplicação,
             // usando a chave "DefaultConnection" do arquivo appsettings.json
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+        services.AddIdentity<IdentityUser, IdentityRole>()
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
 
         /* O que faz: Diz ao contêiner de DI para criar novas instâncias de LancheRepository e CategoriaRepository sempre que ILancheRepository
         e ICategoriaRepository forem solicitados */
@@ -70,6 +75,8 @@ public class Startup
         app.UseRouting();
         // Ativar sessao
         app.UseSession();
+
+        app.UseAuthentication();
 
         app.UseAuthorization();
 
