@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Meu conteúdo\CODE\Projetos\MVC\LanchesON\LanchesON
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Meu conteúdo/CODE/Projetos/MVC/LanchesON/LanchesON/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Meu conteúdo/CODE/Projetos/MVC/LanchesON/LanchesON/Views/CarrinhoCompra/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycmluaG9Db21wcmFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
