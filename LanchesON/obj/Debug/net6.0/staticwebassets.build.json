@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u+3vjWz9NeWAecMFHFKqWPo9a5osTCk0XTZyAEjAJ4U=",
+  "Hash": "PHy+ZbPAdt7shQY3afW4BZDu3IMZcdupK+Ag3FeSUEA=",
   "Source": "LanchesON",
   "BasePath": "_content/LanchesON",
   "Mode": "Default",
@@ -238,6 +238,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\Home-iconred.png"
     },
     {
+      "Identity": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\login1.jpg",
+      "SourceId": "LanchesON",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\",
+      "BasePath": "_content/LanchesON",
+      "RelativePath": "Images/login1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\login1.jpg"
+    },
+    {
       "Identity": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\phone-app-icon.png",
       "SourceId": "LanchesON",
       "SourceType": "Discovered",
@@ -253,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\phone-app-icon.png"
+    },
+    {
+      "Identity": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\registro1.jpg",
+      "SourceId": "LanchesON",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\",
+      "BasePath": "_content/LanchesON",
+      "RelativePath": "Images/registro1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\registro1.jpg"
     },
     {
       "Identity": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\remove.ico",

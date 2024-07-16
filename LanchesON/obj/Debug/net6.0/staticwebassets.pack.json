@@ -41,8 +41,16 @@
       "PackagePath": "staticwebassets\\Images\\faleconosco1.jpg"
     },
     {
+      "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\login1.jpg",
+      "PackagePath": "staticwebassets\\Images\\login1.jpg"
+    },
+    {
       "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\phone-app-icon.png",
       "PackagePath": "staticwebassets\\Images\\phone-app-icon.png"
+    },
+    {
+      "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\registro1.jpg",
+      "PackagePath": "staticwebassets\\Images\\registro1.jpg"
     },
     {
       "Id": "C:\\Meu conteúdo\\CODE\\Projetos\\MVC\\LanchesON\\LanchesON\\wwwroot\\Images\\remove.ico",
