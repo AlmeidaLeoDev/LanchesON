@@ -1,7 +1,8 @@
 ﻿using LanchesON.Models;
 using LanchesON.ViewModels;
 using LanchesON.Repositories.Interfaces;
-using Microsoft.AspNetCore.Mvc; 
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LanchesON.Controllers 
 {
@@ -35,6 +36,8 @@ namespace LanchesON.Controllers
             // Retorna a View com a ViewModel do carrinho de compras
             return View(carrinhoCompraVM);
         }
+
+        [Authorize]
         public IActionResult AdicionarItemNoCarrinhoCompra(int lancheId)
         {
             // Seleciona o lanche com base no ID fornecido
@@ -55,6 +58,7 @@ namespace LanchesON.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         public IActionResult RemoverItemDoCarrinhoCompra(int lancheId)
         {
             // Seleciona o lanche com base no ID fornecido
