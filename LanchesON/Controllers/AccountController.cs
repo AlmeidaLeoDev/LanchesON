@@ -86,5 +86,9 @@ namespace LanchesON.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }
