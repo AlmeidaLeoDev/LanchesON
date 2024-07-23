@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using LanchesON.Models;
 using LanchesMac.Repositories;
 using Microsoft.AspNetCore.Identity;
+using LanchesMac.Services;
 
 namespace LanchesON;
 public class Startup
@@ -48,6 +49,16 @@ public class Startup
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddTransient<IPedidoRepository, PedidoRepository>();
+        services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
+
+        services.AddAuthorization(options =>
+        {
+            options.AddPolicy("Admin",
+                politica =>
+                {
+                    politica.RequireRole("Admin");
+                });
+        });
 
         // Registrar IHttpContextAccessor
         /* Registra o serviço IHttpContextAccessor no contêiner de injeção de dependência do ASP.NET Core. Isso permite que você acesse o
@@ -69,7 +80,7 @@ public class Startup
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ISeedUserRoleInitial seedUserRoleInitial)
     {
         if (env.IsDevelopment())
         {
